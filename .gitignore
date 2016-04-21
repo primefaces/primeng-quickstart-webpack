@@ -1,9 +1,8 @@
 node_modules
 *.js
+!webpack.config.js
 *.log
 *.map
 *.d.ts
-!app/resources/*.js
-.idea/
 *.DS_Store
 typings
