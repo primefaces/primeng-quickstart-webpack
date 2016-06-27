@@ -1,11 +1,11 @@
-import {Component} from 'angular2/core';
-import {HTTP_PROVIDERS} from 'angular2/http';
+import {Component, NgZone} from '@angular/core';
+import {HTTP_PROVIDERS} from '@angular/http';
 import {InputText,DataTable,Button,Dialog,Column,Header,Footer} from 'primeng/primeng';
 import {Car} from './cars/car';
 import {CarService} from './cars/carservice';
 
 @Component({
-	templateUrl: 'app/app.component.html',
+	templateUrl: './app/app.component.html',
 	selector: 'my-app',
     directives: [InputText,DataTable,Button,Dialog,Column,Header,Footer],
 	providers: [HTTP_PROVIDERS,CarService]

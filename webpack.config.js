@@ -1,3 +1,9 @@
+var path = require('path');
+
+function root(p) {
+  return path.join(__dirname, p);
+}
+
 module.exports = {
   entry: './app/boot.ts',
   output: {
@@ -12,6 +18,13 @@ module.exports = {
     loaders: [
       { test: /\.tsx?$/, loader: 'ts-loader' }
     ],
-    noParse: [ /zone\.js\/dist\/.+/, /angular2\/bundles\/.+/ ]
-  }
+    preLoaders: [
+      { test: /\.js$/, loader: "source-map-loader", exclude: [root('node_modules/rxjs'), root('node_modules/primeng')] }
+    ]
+  },
+  devServer: {
+    historyApiFallback: true,
+    progress: true,
+  },
+  debug: true
 };
