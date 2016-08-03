@@ -1,10 +1,14 @@
 //library imports: shims, pollyfills, etc
-import 'es7-reflect-metadata/dist/browser';
-import 'zone.js/dist/zone';
+import {bootstrap} from '@angular/platform-browser-dynamic';
+import {provide} from '@angular/core';
+import {AppComponent} from './app.component';
+import {enableProdMode} from '@angular/core';
+import {LocationStrategy,HashLocationStrategy} from '@angular/common';
+import {disableDeprecatedForms, provideForms} from '@angular/forms';
 
-import 'script!primeui/primeui-ng-all.min.js';
-import { bootstrap } from '@angular/platform-browser-dynamic';
-import { AppComponent } from './app.component';
-import 'rxjs/Rx';
-
-bootstrap(AppComponent).catch(err => console.error(err));;
+//enableProdMode();
+bootstrap(AppComponent, [
+  disableDeprecatedForms(),
+  provideForms(),
+  provide(LocationStrategy, {useClass: HashLocationStrategy})
+]);

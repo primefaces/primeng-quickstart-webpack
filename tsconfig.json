@@ -12,9 +12,31 @@
     },
     "compileOnSave": false,
     "buildOnSave": false,
-    "exclude": [
-        "typings/main",
+    "filesGlob": [
+        "**/*.ts",
+        "!node_modules/**"
+    ],
+    "files": [
+        "app/app.component.d.ts",
+        "app/app.component.ts",
+        "app/boot.d.ts",
+        "app/boot.ts",
+        "app/cars/car.d.ts",
+        "app/cars/car.ts",
+        "app/cars/carservice.d.ts",
+        "app/cars/carservice.ts",
+        "app/polyfills.d.ts",
+        "app/polyfills.ts",
+        "app/vendor.d.ts",
+        "app/vendor.ts",
+        "typings/browser.d.ts",
+        "typings/browser/ambient/es6-shim/index.d.ts",
+        "typings/browser/ambient/jasmine/index.d.ts",
         "typings/main.d.ts",
-        "node_modules"
-    ]
+        "typings/main/ambient/es6-shim/index.d.ts",
+        "typings/main/ambient/jasmine/index.d.ts"
+    ],
+    "atom": {
+        "rewriteTsconfig": true
+    }
 }
