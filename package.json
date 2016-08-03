@@ -4,6 +4,7 @@
   "scripts": {
     "postinstall": "npm run typings install",
     "typings": "typings",
+    "tsc": "tsc",
     "build": "webpack",
     "webpack": "webpack",
     "webpack:w": "webpack -w",
@@ -35,7 +36,7 @@
     "script-loader": "^0.6.1",
     "ts-loader": "^0.8.1",
     "typescript": "^1.8.10",
-    "typings": "^0.8.1",
+    "typings": "^1.3.0",
     "webpack": "^1.13.1"
   }
 }
