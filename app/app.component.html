@@ -1,11 +1,4 @@
-<div class="ContentSideSections">
-    <div class="Content100 overHidden TextShadow">
-        <span class="fontSize30 TextShadow orange mediumFont marginBottom20 dispBlock">PrimeNG Sample with Webpack</span>
-        <span class="defaultText dispTable">This sample demonstrates a sample setup using Webpack.</span>
-    </div>
-</div>
-
-<div class="ContentSideSections Implementation">
+<div class="ContentSideSections Implementation" style="margin-top:50px;">
     <p-dataTable [value]="cars" selectionMode="single" [(selection)]="selectedCar" (onRowSelect)="onRowSelect($event)" [paginator]="true" [rows]="10" [responsive]="true">
         <p-header>CRUD for Cars</p-header>
         <p-column field="vin" header="Vin" [sortable]="true"></p-column>
