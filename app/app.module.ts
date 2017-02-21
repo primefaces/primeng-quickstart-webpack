@@ -3,10 +3,7 @@ import {FormsModule} from '@angular/forms';
 import {HttpModule}    from '@angular/http';
 import {BrowserModule} from '@angular/platform-browser';
 <<<<<<< HEAD
-<<<<<<< HEAD
 import 'rxjs/add/operator/toPromise';
-=======
->>>>>>> origin/master
 =======
 >>>>>>> origin/master
 
@@ -14,10 +11,6 @@ import {AppComponent}  from './app.component';
 import {CarService} from './cars/carservice';
 import {InputTextModule,DataTableModule,ButtonModule,DialogModule} from 'primeng/primeng';
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
 =======
 
 >>>>>>> origin/master
