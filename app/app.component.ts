@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import {Component, NgZone} from '@angular/core';
 import {InputText,DataTable,Button,Dialog,Column,Header,Footer} from 'primeng/primeng';
 import {Car} from './cars/car';
@@ -13,14 +14,26 @@ import {CarService} from './cars/carservice';
 class PrimeCar implements Car {
 
 >>>>>>> origin/master
+=======
+import {Component} from '@angular/core';
+import {Car} from './cars/car';
+import {CarService} from './cars/carservice';
+
+class PrimeCar implements Car {
+
+>>>>>>> origin/master
     constructor(public vin?, public year?, public brand?, public color?) {}
 }
 
 @Component({
 	templateUrl: './app/app.component.html',
 <<<<<<< HEAD
+<<<<<<< HEAD
 	selector: 'my-app',
 	providers: [CarService]
+=======
+	selector: 'my-app'
+>>>>>>> origin/master
 =======
 	selector: 'my-app'
 >>>>>>> origin/master
