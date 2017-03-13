@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import {Car} from './cars/car';
 import {CarService} from './cars/carservice';
 import '../assets/css/styles.css';
+import '../../node_modules/primeng/resources/themes/omega/theme.css';
+import '../../node_modules/primeng/resources/primeng.min.css';
+import '../../node_modules/font-awesome/css/font-awesome.min.css';
 
 class PrimeCar implements Car {
     constructor(public vin?, public year?, public brand?, public color?) {}
