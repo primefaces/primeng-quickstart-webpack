@@ -11,6 +11,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var carservice_1 = require('./cars/carservice');
 require('../assets/css/styles.css');
+require('../../node_modules/primeng/resources/themes/omega/theme.css');
+require('../../node_modules/primeng/resources/primeng.min.css');
+require('../../node_modules/font-awesome/css/font-awesome.min.css');
 var PrimeCar = (function () {
     function PrimeCar(vin, year, brand, color) {
         this.vin = vin;
